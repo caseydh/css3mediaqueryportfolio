@@ -1,0 +1,404 @@
+/*font imports
+===============*/
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Bungee+Inline');
+*{
+    font-family: 'Raleway', sans-serif;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    box-sizing: border-box;
+    transition: all ease-in-out 250ms;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+/*typeography
+===============*/
+
+.button{
+    text-decoration: none;
+    border: solid 2px;
+    padding: 1em;
+    font-size: 1.2em;
+    color: rgb(104, 240, 92);
+    background-color: transparent;
+}
+.small-button{
+    text-decoration: none;
+    border: solid 2px;
+    padding: 1em;
+    font-size: .8em;
+    color: rgb(104, 240, 92);
+}
+
+.button:hover{
+    color: white;
+    background-color: rgb(104, 240, 92);
+    border: solid 2px rgb(104, 240, 92);
+}
+.small-button:hover{
+    color: white;
+    background-color: rgb(104, 240, 92);
+    border: solid 2px rgb(104, 240, 92);
+}
+
+/*header
+===============*/
+
+header{
+    position: absolute;
+    margin-top: 1em;
+    right:0;
+    left:0;
+}
+header h1{
+    font-family: 'Bungee Inline', cursive;
+    color: rgb(104, 240, 92);
+    font-size: 2.7em;
+}
+
+/*nav
+========*/
+
+nav ul{
+    margin:0; 
+    padding: 0;
+    list-style: none;
+    
+}
+
+nav li{
+    display: inline-block;
+    margin: 0 .5em;
+    padding: .3em;
+    font-size: 1.1em;
+}
+
+nav a:hover{
+    text-decoration: underline;
+}
+
+nav a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: whitesmoke;
+}
+
+/*home
+========*/
+
+.home{
+    background-image: url(img/laptop3.jpg);
+    padding: 10em 0;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+}
+.home h1{
+    color: whitesmoke;
+    margin: 1.7em;
+    font-size: 2em;
+
+}
+.lighttext{
+    font-size: .7em;
+    font-weight: 100;
+    display: block;
+}
+
+/*about
+============*/
+
+.about{
+    background-color: #232323;
+    color: rgb(104, 240, 92);
+    padding: 4em;
+    outline: 2px solid rgb(104, 240, 92);
+    outline-offset: -2.5em;
+    position: relative;
+    width: 100vw;
+}
+.about h1{
+    position: absolute;
+    padding: 0 .3em;
+    left: 50%;
+    transform: translateX(-50%);
+    top: .9em;
+    background-color: #232323;
+}
+.about p{
+    font-size: 1.3em;
+    color: white;
+}
+
+/*work
+============*/
+.work{
+    width: 100vw;
+}
+
+.worktitle h1{
+    margin:1.5em;
+    padding: 1em;
+    border-top: 2px solid rgb(104, 240, 92);
+}
+
+.work-item{
+    position: relative;
+    margin: 0;
+    padding: 0;
+
+}
+.work-item img{
+    display:block;
+}
+
+figcaption{
+    position: absolute;
+    padding: 1.5em;
+    z-index: 100;
+    left: 0;
+    right: 0;
+    color: white;
+    bottom: 0;
+    background: #232323;
+    opacity: .85;
+    width: 100%;
+}
+
+figcaption p{
+    font-size:1.5em;
+    margin: 1em;
+}
+
+/*contact title
+==========*/
+.contact-title{
+    background-color: rgb(104, 240, 92);
+    color: black;
+    width: 100vw;
+    padding: 2em;
+    display: block;
+}
+
+
+/*contact form
+==============*/
+
+form p{
+    text-align: left;
+}
+
+button{
+    margin:1em;
+}
+.contact{
+    background-color: #232323;
+    padding: 2em;
+    padding-top: 4em;
+    width: 100vw;
+}
+
+label{
+    display: block;
+    text-align: left;
+    color: white;
+    font-size: 1.5em;
+}
+
+input,textarea{
+    border-radius: 5px;
+    margin: .7em;
+    font-size: 1.5em;
+    text-align: left;
+
+}
+input, textarea {
+    -webkit-transition: all 0.10s ease-in-out;
+    -moz-transition: all 0.10s ease-in-out;
+    -ms-transition: all 0.10s ease-in-out;
+    -o-transition: all 0.10s ease-in-out;
+    outline: none;
+    border: 1px solid #DDDDDD;
+  }
+   
+  input:focus, textarea:focus {
+    box-shadow: 0 0 6px rgb(104, 240, 92);
+    border: 2px solid rgb(104, 240, 92);
+  }
+
+/*footer
+==============*/
+
+footer{
+    color: rgb(104, 240, 92);
+    background: black;
+    font-size: 2em;
+    padding: 1em;
+    width: 100vw;
+}
+
+footer a{
+    margin: .7em;
+    color: rgb(104, 240, 92);
+    font-size: 1em;
+}
+
+footer a:hover{
+    color: white;
+}
+
+/* iPads (portrait and landscape) 
+============ */
+@media only screen and (min-device-width : 768px){
+    
+    /* Styles */
+    .button{
+        font-size: 2em;
+    }
+    /*header*/
+    header{
+        text-align: left;
+        width: 100vw;
+    }
+    header h1{
+        font-size: 2em;
+        display: inline-block;
+        left: 0;
+        margin-left: 1.2em;
+    }
+
+    /*nav*/
+    nav li{
+        margin: 0 1em;
+        padding: .2em;
+        font-size: 3em;
+    }
+    nav{
+        display: inline-block;
+        margin-left: 30vw;
+    }
+    nav a{
+        font-size: .3em;
+    }
+
+    /*home*/
+
+    .home{
+        padding: 10em 0;
+    }
+    .home h1{
+        color: whitesmoke;
+        margin-top: 2.8em;
+        margin-bottom: 2.8em;
+        font-size: 2.9em;
+    
+    }
+    .lighttext{
+        font-size: .7em;
+        font-weight: 100;
+        display: block;
+    }
+    /*work*/
+
+    .work-item{
+        display: flex;
+        width:100%;
+        height: 36vw;
+    }
+    .work{
+        display: inline-grid;
+        grid-template-rows: repeat(3,40%);
+        grid-template-columns: repeat(2, auto);
+    }
+    .contact-title{
+        font-size: 2em;
+    }
+    form{
+        text-align: left;
+    }
+
+    .row2{
+        display: inline-block;
+        margin-left: 13vw;
+    }
+
+    .row1{
+        display: inline-block;
+        margin-left: 13vw;
+    }
+
+    .messagediv{
+        margin-left: 13vw;
+    }
+
+    .submit{
+        margin:2em;
+        padding: .5em;
+    }
+    .center{
+        text-align: center;
+    }
+   
+    }
+    /*laptop & desktop screen*/
+    @media only screen and (min-device-width : 1200px){
+
+        header h1{
+            margin-left: 2.6em;
+        }
+        /*about*/
+        .about{
+            width: 30vw;
+            position: absolute;
+            margin-top: -9em;
+            left:0;
+            margin-left: 5em;
+        }
+        nav{
+            margin-left: 50vw;
+        }
+
+        .container{
+            background-image: url(img/seattle.jpeg);
+            background-repeat: no-repeat;
+            height: 34vw;
+            text-align: center;
+            width: 80%;
+            margin-left: 15%;
+        }
+        /*work*/
+
+        .work-item{
+            display: flex;
+            width:100%;
+            height: 28vw;
+            overflow: hidden;
+        }
+        figcaption{
+            transform: translateY(150%);
+        }
+        .work-item:hover figcaption{
+            transform: translateY(0);
+        }
+        .work{
+            display: inline-grid;
+            grid-template-rows: repeat(2,33.33334%);
+            grid-template-columns: repeat(3, auto);
+        }
+        .row1{
+            margin-left: 23vw;
+        }
+        .messagediv{
+            margin-left: 23vw;
+        }
+    }
